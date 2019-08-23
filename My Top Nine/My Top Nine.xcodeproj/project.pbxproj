@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		92F4FE38230F7AC3006017A4 /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4FE37230F7AC3006017A4 /* LoginPage.storyboard */; };
+		92F4FE3A230F80E0006017A4 /* AppHomepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4FE39230F80E0006017A4 /* AppHomepage.storyboard */; };
+		92F4FE3C230F9CD2006017A4 /* TopNineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4FE3B230F9CD2006017A4 /* TopNineItem.swift */; };
+		92F4FE3E230F9DDD006017A4 /* TopNineCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4FE3D230F9DDD006017A4 /* TopNineCategory.swift */; };
 		A45FEE95230E27C2009E103D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FEE94230E27C2009E103D /* AppDelegate.swift */; };
 		A45FEE97230E27C2009E103D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FEE96230E27C2009E103D /* ViewController.swift */; };
 		A45FEE9A230E27C2009E103D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45FEE98230E27C2009E103D /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		92F4FE37230F7AC3006017A4 /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
+		92F4FE39230F80E0006017A4 /* AppHomepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppHomepage.storyboard; sourceTree = "<group>"; };
+		92F4FE3B230F9CD2006017A4 /* TopNineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNineItem.swift; sourceTree = "<group>"; };
+		92F4FE3D230F9DDD006017A4 /* TopNineCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNineCategory.swift; sourceTree = "<group>"; };
 		A45FEE91230E27C2009E103D /* My Top Nine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Top Nine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45FEE94230E27C2009E103D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A45FEE96230E27C2009E103D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				A45FEE9D230E27C4009E103D /* LaunchScreen.storyboard */,
 				A45FEEA0230E27C4009E103D /* Info.plist */,
 				92F4FE37230F7AC3006017A4 /* LoginPage.storyboard */,
+				92F4FE39230F80E0006017A4 /* AppHomepage.storyboard */,
+				92F4FE3B230F9CD2006017A4 /* TopNineItem.swift */,
+				92F4FE3D230F9DDD006017A4 /* TopNineCategory.swift */,
 			);
 			path = "My Top Nine";
 			sourceTree = "<group>";
@@ -128,6 +137,7 @@
 				A45FEE9F230E27C4009E103D /* LaunchScreen.storyboard in Resources */,
 				92F4FE38230F7AC3006017A4 /* LoginPage.storyboard in Resources */,
 				A45FEE9C230E27C4009E103D /* Assets.xcassets in Resources */,
+				92F4FE3A230F80E0006017A4 /* AppHomepage.storyboard in Resources */,
 				A45FEE9A230E27C2009E103D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +151,8 @@
 			files = (
 				A45FEE97230E27C2009E103D /* ViewController.swift in Sources */,
 				A45FEE95230E27C2009E103D /* AppDelegate.swift in Sources */,
+				92F4FE3C230F9CD2006017A4 /* TopNineItem.swift in Sources */,
+				92F4FE3E230F9DDD006017A4 /* TopNineCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
