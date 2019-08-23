@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92EA3920230FBAE40086552A /* TopNineCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA391F230FBAE40086552A /* TopNineCategoriesViewController.swift */; };
+		92EA3922230FBBB30086552A /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA3921230FBBB30086552A /* CategoryCollectionViewCell.swift */; };
 		92F4FE38230F7AC3006017A4 /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4FE37230F7AC3006017A4 /* LoginPage.storyboard */; };
 		92F4FE3A230F80E0006017A4 /* AppHomepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4FE39230F80E0006017A4 /* AppHomepage.storyboard */; };
 		92F4FE3C230F9CD2006017A4 /* TopNineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4FE3B230F9CD2006017A4 /* TopNineItem.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92EA391F230FBAE40086552A /* TopNineCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNineCategoriesViewController.swift; sourceTree = "<group>"; };
+		92EA3921230FBBB30086552A /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		92F4FE37230F7AC3006017A4 /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
 		92F4FE39230F80E0006017A4 /* AppHomepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppHomepage.storyboard; sourceTree = "<group>"; };
 		92F4FE3B230F9CD2006017A4 /* TopNineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNineItem.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				92F4FE39230F80E0006017A4 /* AppHomepage.storyboard */,
 				92F4FE3B230F9CD2006017A4 /* TopNineItem.swift */,
 				92F4FE3D230F9DDD006017A4 /* TopNineCategory.swift */,
+				92EA391F230FBAE40086552A /* TopNineCategoriesViewController.swift */,
+				92EA3921230FBBB30086552A /* CategoryCollectionViewCell.swift */,
 			);
 			path = "My Top Nine";
 			sourceTree = "<group>";
@@ -151,7 +157,9 @@
 			files = (
 				A45FEE97230E27C2009E103D /* ViewController.swift in Sources */,
 				A45FEE95230E27C2009E103D /* AppDelegate.swift in Sources */,
+				92EA3920230FBAE40086552A /* TopNineCategoriesViewController.swift in Sources */,
 				92F4FE3C230F9CD2006017A4 /* TopNineItem.swift in Sources */,
+				92EA3922230FBBB30086552A /* CategoryCollectionViewCell.swift in Sources */,
 				92F4FE3E230F9DDD006017A4 /* TopNineCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

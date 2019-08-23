@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-enum Category {
-    case movies
-    case sports
-    case friends
-    case tvShows
-    case hobbies
-    case books
-    case music
+enum Category: String {
+    case movies = "movies"
+    case sports = "sports"
+    case friends = "friends"
+    case tvShows = "tvShows"
+    case hobbies = "hobbies"
+    case books = "books"
+    case music = "music"
 }
 
 struct TopNineItem {
