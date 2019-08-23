@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92F4FE38230F7AC3006017A4 /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4FE37230F7AC3006017A4 /* LoginPage.storyboard */; };
+		A442ACA7230F9BDE00E1589A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442ACA6230F9BDE00E1589A /* User.swift */; };
+		A442ACAC230F9CD600E1589A /* login-ui-storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A442ACAB230F9CD600E1589A /* login-ui-storyboard.storyboard */; };
+		A442ACAE230F9CE300E1589A /* onboarding-ui-storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A442ACAD230F9CE300E1589A /* onboarding-ui-storyboard.storyboard */; };
 		A45FEE95230E27C2009E103D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FEE94230E27C2009E103D /* AppDelegate.swift */; };
-		A45FEE97230E27C2009E103D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FEE96230E27C2009E103D /* ViewController.swift */; };
 		A45FEE9A230E27C2009E103D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45FEE98230E27C2009E103D /* Main.storyboard */; };
 		A45FEE9C230E27C4009E103D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45FEE9B230E27C4009E103D /* Assets.xcassets */; };
 		A45FEE9F230E27C4009E103D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45FEE9D230E27C4009E103D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		92F4FE37230F7AC3006017A4 /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
+		A442ACA6230F9BDE00E1589A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A442ACAB230F9CD600E1589A /* login-ui-storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "login-ui-storyboard.storyboard"; sourceTree = "<group>"; };
+		A442ACAD230F9CE300E1589A /* onboarding-ui-storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "onboarding-ui-storyboard.storyboard"; sourceTree = "<group>"; };
 		A45FEE91230E27C2009E103D /* My Top Nine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Top Nine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45FEE94230E27C2009E103D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A45FEE96230E27C2009E103D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A45FEE99230E27C2009E103D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A45FEE9B230E27C4009E103D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A45FEE9E230E27C4009E103D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A442ACA4230F9BC800E1589A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A442ACA6230F9BDE00E1589A /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A442ACA5230F9BD100E1589A /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		A442ACA8230F9C8200E1589A /* Login Sign Up Views */ = {
+			isa = PBXGroup;
+			children = (
+				A442ACAA230F9CA200E1589A /* Storyboards */,
+				A442ACA9230F9C8F00E1589A /* View Controllers */,
+			);
+			path = "Login Sign Up Views";
+			sourceTree = "<group>";
+		};
+		A442ACA9230F9C8F00E1589A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A442ACAA230F9CA200E1589A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A442ACAB230F9CD600E1589A /* login-ui-storyboard.storyboard */,
+				A442ACAD230F9CE300E1589A /* onboarding-ui-storyboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		A45FEE88230E27C2009E103D = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +98,14 @@
 		A45FEE93230E27C2009E103D /* My Top Nine */ = {
 			isa = PBXGroup;
 			children = (
+				A442ACA8230F9C8200E1589A /* Login Sign Up Views */,
+				A442ACA5230F9BD100E1589A /* Model Controllers */,
+				A442ACA4230F9BC800E1589A /* Models */,
 				A45FEE94230E27C2009E103D /* AppDelegate.swift */,
-				A45FEE96230E27C2009E103D /* ViewController.swift */,
 				A45FEE98230E27C2009E103D /* Main.storyboard */,
 				A45FEE9B230E27C4009E103D /* Assets.xcassets */,
 				A45FEE9D230E27C4009E103D /* LaunchScreen.storyboard */,
 				A45FEEA0230E27C4009E103D /* Info.plist */,
-				92F4FE37230F7AC3006017A4 /* LoginPage.storyboard */,
 			);
 			path = "My Top Nine";
 			sourceTree = "<group>";
@@ -126,9 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A45FEE9F230E27C4009E103D /* LaunchScreen.storyboard in Resources */,
-				92F4FE38230F7AC3006017A4 /* LoginPage.storyboard in Resources */,
+				A442ACAE230F9CE300E1589A /* onboarding-ui-storyboard.storyboard in Resources */,
 				A45FEE9C230E27C4009E103D /* Assets.xcassets in Resources */,
 				A45FEE9A230E27C2009E103D /* Main.storyboard in Resources */,
+				A442ACAC230F9CD600E1589A /* login-ui-storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A45FEE97230E27C2009E103D /* ViewController.swift in Sources */,
+				A442ACA7230F9BDE00E1589A /* User.swift in Sources */,
 				A45FEE95230E27C2009E103D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
