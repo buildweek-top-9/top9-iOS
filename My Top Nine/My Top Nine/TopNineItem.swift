@@ -13,10 +13,12 @@ enum Category: String {
     case movies = "movies"
     case sports = "sports"
     case friends = "friends"
-    case tvShows = "tvShows"
+    case tvShows = "tvshows"
     case hobbies = "hobbies"
     case books = "books"
     case music = "music"
+    case foods = "foods"
+    case places = "places"
 }
 
 struct TopNineItem {

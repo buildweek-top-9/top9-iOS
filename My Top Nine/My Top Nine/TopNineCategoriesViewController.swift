@@ -10,7 +10,7 @@ import UIKit
 
 class TopNineCategoriesViewController: UIViewController {
 
-    var categories: [Category] = [.friends, .movies, .music, .sports]
+    var categories: [Category] = [.friends, .movies, .music, .sports, .tvShows, .foods, .places]
     
     @IBOutlet weak var collectionView: UICollectionView!
     
