@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		92EA3920230FBAE40086552A /* TopNineCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA391F230FBAE40086552A /* TopNineCategoriesViewController.swift */; };
 		92EA3922230FBBB30086552A /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA3921230FBBB30086552A /* CategoryCollectionViewCell.swift */; };
+		92EA3924230FC1870086552A /* TopNineItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EA3923230FC1870086552A /* TopNineItemDetail.storyboard */; };
+		92EA3926230FC37D0086552A /* TopNineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA3925230FC37D0086552A /* TopNineDetailViewController.swift */; };
 		92F4FE38230F7AC3006017A4 /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4FE37230F7AC3006017A4 /* LoginPage.storyboard */; };
 		92F4FE3A230F80E0006017A4 /* AppHomepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4FE39230F80E0006017A4 /* AppHomepage.storyboard */; };
 		92F4FE3C230F9CD2006017A4 /* TopNineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4FE3B230F9CD2006017A4 /* TopNineItem.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		92EA391F230FBAE40086552A /* TopNineCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNineCategoriesViewController.swift; sourceTree = "<group>"; };
 		92EA3921230FBBB30086552A /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		92EA3923230FC1870086552A /* TopNineItemDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopNineItemDetail.storyboard; sourceTree = "<group>"; };
+		92EA3925230FC37D0086552A /* TopNineDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNineDetailViewController.swift; sourceTree = "<group>"; };
 		92F4FE37230F7AC3006017A4 /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
 		92F4FE39230F80E0006017A4 /* AppHomepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppHomepage.storyboard; sourceTree = "<group>"; };
 		92F4FE3B230F9CD2006017A4 /* TopNineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNineItem.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				92F4FE3D230F9DDD006017A4 /* TopNineCategory.swift */,
 				92EA391F230FBAE40086552A /* TopNineCategoriesViewController.swift */,
 				92EA3921230FBBB30086552A /* CategoryCollectionViewCell.swift */,
+				92EA3923230FC1870086552A /* TopNineItemDetail.storyboard */,
+				92EA3925230FC37D0086552A /* TopNineDetailViewController.swift */,
 			);
 			path = "My Top Nine";
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 				92F4FE38230F7AC3006017A4 /* LoginPage.storyboard in Resources */,
 				A45FEE9C230E27C4009E103D /* Assets.xcassets in Resources */,
 				92F4FE3A230F80E0006017A4 /* AppHomepage.storyboard in Resources */,
+				92EA3924230FC1870086552A /* TopNineItemDetail.storyboard in Resources */,
 				A45FEE9A230E27C2009E103D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +167,7 @@
 				92EA3920230FBAE40086552A /* TopNineCategoriesViewController.swift in Sources */,
 				92F4FE3C230F9CD2006017A4 /* TopNineItem.swift in Sources */,
 				92EA3922230FBBB30086552A /* CategoryCollectionViewCell.swift in Sources */,
+				92EA3926230FC37D0086552A /* TopNineDetailViewController.swift in Sources */,
 				92F4FE3E230F9DDD006017A4 /* TopNineCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

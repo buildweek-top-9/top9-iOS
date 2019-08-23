@@ -12,23 +12,40 @@ class TopNineCategoriesViewController: UIViewController {
 
     var categories: [Category] = [.friends, .movies, .music, .sports]
     
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TopNineItemShowDetail" {
+            guard let topNineDetailVC = segue.destination as? TopNineDetailViewController else { return }
+            if let indexPath = collectionView.indexPathsForSelectedItems?.first {
+                let item = categories[indexPath.item]
+                let name = item.rawValue
+                topNineDetailVC.itemName = name
+            }
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }
 
