@@ -11,8 +11,11 @@ import UIKit
 class TopNineDetailViewController: UIViewController {
     
     @IBOutlet weak var pageNameLabel: UILabel!
+    @IBOutlet weak var topNineCollectionView: UICollectionView!
+    
     
     var itemName: String?
+    var items: [String] = ["Billions", "NathanForyou", "BreakingBad"]
     
 
     override func viewDidLoad() {
@@ -36,5 +39,23 @@ class TopNineDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+    
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
+}
+
+
+extension TopNineDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
 
 }

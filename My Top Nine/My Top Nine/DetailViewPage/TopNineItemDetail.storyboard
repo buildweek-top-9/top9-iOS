@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TFf-Ii-NGr">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top Nine Detail View Controller-->
+        <scene sceneID="Jtj-uZ-N2z">
+            <objects>
+                <viewController id="TFf-Ii-NGr" customClass="TopNineDetailViewController" customModule="My_Top_Nine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q53-oe-0xZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkN-VM-2AK">
+                                <rect key="frame" x="190.5" y="437.5" width="33" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhL-nP-bod">
+                                <rect key="frame" x="25" y="54" width="12" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backbtn"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="TFf-Ii-NGr" eventType="touchUpInside" id="X4b-7o-k5z"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailbg" translatesAutoresizingMaskIntoConstraints="NO" id="HLU-sN-vUR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9zD-Gc-72F">
+                                <rect key="frame" x="25" y="214" width="492" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YbY-z7-KY6">
+                                    <size key="itemSize" width="133" height="186"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="topNineItemCell" id="KRf-OC-9NX" customClass="ItemCollectionViewCell" customModule="My_Top_Nine" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="186"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="133" height="186"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="TFf-Ii-NGr" id="Sor-si-zQV"/>
+                                    <outlet property="delegate" destination="TFf-Ii-NGr" id="zRS-Eq-qJn"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HLU-sN-vUR" firstAttribute="trailing" secondItem="uHB-JH-3eH" secondAttribute="trailing" id="5I2-QT-EXj"/>
+                            <constraint firstItem="HLU-sN-vUR" firstAttribute="leading" secondItem="uHB-JH-3eH" secondAttribute="leading" id="ArX-fe-Ofv"/>
+                            <constraint firstAttribute="bottom" secondItem="HLU-sN-vUR" secondAttribute="bottom" id="KMj-z1-vTf"/>
+                            <constraint firstItem="HLU-sN-vUR" firstAttribute="top" secondItem="q53-oe-0xZ" secondAttribute="top" id="QxM-fk-YbK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uHB-JH-3eH"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageNameLabel" destination="UkN-VM-2AK" id="XO5-8I-C2x"/>
+                        <outlet property="topNineCollectionView" destination="9zD-Gc-72F" id="px7-sZ-NdV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WiD-Xc-GGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="183.48214285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backbtn" width="12" height="18"/>
+        <image name="detailbg" width="414" height="896"/>
+    </resources>
+</document>
