@@ -1,5 +1,5 @@
 //
-//  ItemCollectionViewCell.swift
+//  FriendCollectionViewCell.swift
 //  My Top Nine
 //
 //  Created by Dillon P on 8/24/19.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ItemCollectionViewCell: UICollectionViewCell {
+class FriendCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var topNineItemImageView: UIImageView!
+    @IBOutlet weak var friendImage: UIImageView!
+    
     
     
 }

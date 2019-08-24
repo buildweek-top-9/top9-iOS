@@ -36,10 +36,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailbg" translatesAutoresizingMaskIntoConstraints="NO" id="HLU-sN-vUR">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9zD-Gc-72F">
-                                <rect key="frame" x="25" y="214" width="492" height="186"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9zD-Gc-72F">
+                                <rect key="frame" x="35" y="214" width="379" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.98039215686274506" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YbY-z7-KY6">
                                     <size key="itemSize" width="133" height="186"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -53,12 +53,69 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="133" height="186"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M6n-Du-YwU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="133" height="186"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="M6n-Du-YwU" secondAttribute="bottom" id="AWP-bd-lM3"/>
+                                            <constraint firstItem="M6n-Du-YwU" firstAttribute="leading" secondItem="KRf-OC-9NX" secondAttribute="leading" id="LmU-Km-buY"/>
+                                            <constraint firstAttribute="trailing" secondItem="M6n-Du-YwU" secondAttribute="trailing" id="Vue-1U-FH2"/>
+                                            <constraint firstItem="M6n-Du-YwU" firstAttribute="top" secondItem="KRf-OC-9NX" secondAttribute="top" id="x36-H7-65b"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="topNineItemImageView" destination="M6n-Du-YwU" id="f8c-vs-NcY"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="TFf-Ii-NGr" id="Sor-si-zQV"/>
                                     <outlet property="delegate" destination="TFf-Ii-NGr" id="zRS-Eq-qJn"/>
+                                </connections>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discoverMore" translatesAutoresizingMaskIntoConstraints="NO" id="4dU-lQ-z5s">
+                                <rect key="frame" x="35" y="510" width="340" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="emQ-Yg-8bS">
+                                <rect key="frame" x="35" y="709" width="379" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.98039215686274506" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UWT-eN-s1H">
+                                    <size key="itemSize" width="133" height="144"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="friendCell" id="1EA-bz-Nwk" customClass="FriendCollectionViewCell" customModule="My_Top_Nine" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="144"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="133" height="144"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mNH-nd-se0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="133" height="144"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mNH-nd-se0" secondAttribute="trailing" id="DUV-Je-3wk"/>
+                                            <constraint firstItem="mNH-nd-se0" firstAttribute="leading" secondItem="1EA-bz-Nwk" secondAttribute="leading" id="JXb-O5-E53"/>
+                                            <constraint firstAttribute="bottom" secondItem="mNH-nd-se0" secondAttribute="bottom" id="r8N-Hy-Tvn"/>
+                                            <constraint firstItem="mNH-nd-se0" firstAttribute="top" secondItem="1EA-bz-Nwk" secondAttribute="top" id="s5L-AT-qKF"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="friendImage" destination="mNH-nd-se0" id="eIO-r0-Ab8"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="TFf-Ii-NGr" id="L8c-TP-a5I"/>
+                                    <outlet property="delegate" destination="TFf-Ii-NGr" id="WLH-hH-SKd"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -72,8 +129,9 @@
                         <viewLayoutGuide key="safeArea" id="uHB-JH-3eH"/>
                     </view>
                     <connections>
+                        <outlet property="connectCollectionView" destination="emQ-Yg-8bS" id="bt7-7w-r6i"/>
                         <outlet property="pageNameLabel" destination="UkN-VM-2AK" id="XO5-8I-C2x"/>
-                        <outlet property="topNineCollectionView" destination="9zD-Gc-72F" id="px7-sZ-NdV"/>
+                        <outlet property="topNineCollectionView" destination="9zD-Gc-72F" id="lVM-pY-Frq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WiD-Xc-GGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,5 +142,6 @@
     <resources>
         <image name="backbtn" width="12" height="18"/>
         <image name="detailbg" width="414" height="896"/>
+        <image name="discoverMore" width="370" height="130"/>
     </resources>
 </document>
