@@ -61,16 +61,16 @@
                                                     </constraints>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TV" translatesAutoresizingMaskIntoConstraints="NO" id="DgS-bP-NLc">
-                                                    <rect key="frame" x="13" y="62" width="98.000000000000028" height="98.000000000000028"/>
+                                                    <rect key="frame" x="13" y="62" width="16" height="16"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upi-EN-yXl">
-                                                    <rect key="frame" x="46" y="168" width="32.5" height="19"/>
+                                                    <rect key="frame" x="6" y="86" width="30" height="19"/>
                                                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
                                                     <color key="textColor" red="0.33725490196078434" green="0.50196078431372548" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbF-zK-02g">
-                                                    <rect key="frame" x="43.5" y="191" width="37.5" height="14"/>
+                                                    <rect key="frame" x="1.5" y="109" width="39.5" height="14"/>
                                                     <fontDescription key="fontDescription" name="Lato-MediumItalic" family="Lato" pointSize="12"/>
                                                     <color key="textColor" red="0.33725490196078434" green="0.50196078431372548" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -101,6 +101,7 @@
                                             <outlet property="itemRankLabel" destination="8aF-YA-h4F" id="Qg4-Dv-oO0"/>
                                             <outlet property="itemSubtitleLabel" destination="DbF-zK-02g" id="pDe-gR-I6K"/>
                                             <outlet property="topNineItemImageView" destination="M6n-Du-YwU" id="f8c-vs-NcY"/>
+                                            <segue destination="xbg-hL-2lG" kind="show" identifier="EditTopNineSegue" id="7zr-24-gtz"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -166,18 +167,42 @@
                                     <action selector="backButtonTapped:" destination="TFf-Ii-NGr" eventType="touchUpInside" id="X4b-7o-k5z"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Top Nine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecA-MM-LIA">
+                                <rect key="frame" x="35" y="157" width="199" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="32"/>
+                                <color key="textColor" red="0.33725490200000002" green="0.50196078430000002" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m7-rW-10f">
+                                <rect key="frame" x="35" y="448" width="125" height="39"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="32"/>
+                                <color key="textColor" red="0.33725490200000002" green="0.50196078430000002" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZV-g1-OG3" userLabel="Connect">
+                                <rect key="frame" x="35" y="644" width="120" height="39"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="32"/>
+                                <color key="textColor" red="0.33725490200000002" green="0.50196078430000002" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HLU-sN-vUR" firstAttribute="trailing" secondItem="uHB-JH-3eH" secondAttribute="trailing" id="5I2-QT-EXj"/>
+                            <constraint firstItem="RZV-g1-OG3" firstAttribute="top" secondItem="8m7-rW-10f" secondAttribute="bottom" constant="157" id="5Om-Xi-7eo"/>
                             <constraint firstItem="HLU-sN-vUR" firstAttribute="leading" secondItem="uHB-JH-3eH" secondAttribute="leading" id="ArX-fe-Ofv"/>
                             <constraint firstItem="P69-TJ-G01" firstAttribute="top" secondItem="uHB-JH-3eH" secondAttribute="top" constant="10" id="Bpy-SH-7Tl"/>
+                            <constraint firstItem="RZV-g1-OG3" firstAttribute="leading" secondItem="8m7-rW-10f" secondAttribute="leading" id="GeT-8l-7gs"/>
                             <constraint firstAttribute="bottom" secondItem="HLU-sN-vUR" secondAttribute="bottom" id="KMj-z1-vTf"/>
                             <constraint firstItem="HLU-sN-vUR" firstAttribute="top" secondItem="q53-oe-0xZ" secondAttribute="top" id="QxM-fk-YbK"/>
+                            <constraint firstItem="ecA-MM-LIA" firstAttribute="top" secondItem="P69-TJ-G01" secondAttribute="bottom" constant="79" id="RvS-wi-2Yg"/>
+                            <constraint firstItem="ecA-MM-LIA" firstAttribute="leading" secondItem="uHB-JH-3eH" secondAttribute="leading" constant="35" id="SJq-T4-lO1"/>
                             <constraint firstAttribute="bottom" secondItem="KRs-UA-H7i" secondAttribute="bottom" id="Sbz-0y-A22"/>
+                            <constraint firstItem="8m7-rW-10f" firstAttribute="leading" secondItem="ecA-MM-LIA" secondAttribute="leading" id="TgT-F8-lDA"/>
                             <constraint firstItem="P69-TJ-G01" firstAttribute="centerX" secondItem="q53-oe-0xZ" secondAttribute="centerX" id="avP-nj-LrO"/>
                             <constraint firstAttribute="trailing" secondItem="KRs-UA-H7i" secondAttribute="trailing" id="g4P-CT-OCN"/>
                             <constraint firstItem="KRs-UA-H7i" firstAttribute="leading" secondItem="uHB-JH-3eH" secondAttribute="leading" id="see-23-24k"/>
+                            <constraint firstItem="8m7-rW-10f" firstAttribute="top" secondItem="ecA-MM-LIA" secondAttribute="bottom" constant="252.5" id="tOz-11-PUy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uHB-JH-3eH"/>
                     </view>
@@ -190,6 +215,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WiD-Xc-GGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="183.48214285714286"/>
+        </scene>
+        <!--EditTopNineItem-->
+        <scene sceneID="lH1-aA-eM2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EditTopNineItem" id="xbg-hL-2lG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0NA-gO-6eL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043" y="219"/>
         </scene>
     </scenes>
     <resources>

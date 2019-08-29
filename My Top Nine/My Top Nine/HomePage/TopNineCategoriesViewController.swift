@@ -40,7 +40,7 @@ class TopNineCategoriesViewController: UIViewController {
             if let indexPath = collectionView.indexPathsForSelectedItems?.first {
                 let item = categories[indexPath.item]
                 let name = item.rawValue
-                topNineDetailVC.itemName = name
+                topNineDetailVC.categoryName = name
             }
         }
         // Get the new view controller using segue.destination.

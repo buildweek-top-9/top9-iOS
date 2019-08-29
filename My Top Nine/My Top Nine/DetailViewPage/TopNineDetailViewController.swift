@@ -19,7 +19,7 @@ class TopNineDetailViewController: UIViewController {
     
     
     
-    var itemName: String?
+    var categoryName: String?
     var items: [String] = ["Billions", "NathanForYou", "BreakingBad", "DeadToMe", "GOT", "StrangerThings", "MadMen", "BlackMirror", "Californiacation"]
     var friends: [String] = ["jake", "grace", "john", "luke", "lucy", "michael"]
     
@@ -28,14 +28,14 @@ class TopNineDetailViewController: UIViewController {
         super.viewDidLoad()
         self.view.addSubview(topNineCollectionView)
         self.view.addSubview(connectCollectionView)
-        categoryNameLabel.text = itemName
+        categoryNameLabel.text = categoryName
     
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if let name = itemName {
+        if let name = categoryName {
             categoryNameLabel.text = name
         }
     }
