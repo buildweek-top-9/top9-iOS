@@ -16,6 +16,4 @@ class ItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var itemSubtitleLabel: UILabel!
     @IBOutlet weak var itemRankLabel: UILabel!
     
-    
-    
 }

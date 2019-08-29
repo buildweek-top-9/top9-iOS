@@ -1,0 +1,6 @@
+framework module Pods_My_Top_Nine {
+  umbrella header "Pods-My Top Nine-umbrella.h"
+
+  export *
+  module * { export * }
+}

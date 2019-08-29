@@ -16,9 +16,6 @@ class TopNineDetailViewController: UIViewController {
     @IBOutlet weak var connectCollectionView: UICollectionView!
     
     
-    
-    
-    
     var categoryName: String?
     var items: [String] = ["Billions", "NathanForYou", "BreakingBad", "DeadToMe", "GOT", "StrangerThings", "MadMen", "BlackMirror", "Californiacation"]
     var friends: [String] = ["jake", "grace", "john", "luke", "lucy", "michael"]

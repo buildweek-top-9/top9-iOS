@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qBj-Te-ajA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kgC-UF-Gr0">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -95,10 +95,40 @@
             </objects>
             <point key="canvasLocation" x="1300" y="-95.089285714285708"/>
         </scene>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="Kbg-37-l0h">
+            <objects>
+                <viewController id="kgC-UF-Gr0" customClass="LaunchScreenViewController" customModule="My_Top_Nine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UjH-y6-abW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5t-ej-M3H">
+                                <rect key="frame" x="187.5" y="437.5" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y5t-ej-M3H" firstAttribute="centerY" secondItem="UjH-y6-abW" secondAttribute="centerY" id="GRh-XL-CaX"/>
+                            <constraint firstItem="Y5t-ej-M3H" firstAttribute="centerX" secondItem="UjH-y6-abW" secondAttribute="centerX" id="Sew-Cx-S0E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EOI-zn-H6g"/>
+                    </view>
+                    <connections>
+                        <segue destination="qBj-Te-ajA" kind="presentation" identifier="SplashMain" id="hn8-NN-rID"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuJ-R1-wvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-998" y="93"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="PxV-OS-aa7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qBj-Te-ajA" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="qBj-Te-ajA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VIR-Gd-vUo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
