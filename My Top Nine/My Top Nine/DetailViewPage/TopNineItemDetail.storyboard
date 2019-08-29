@@ -61,16 +61,16 @@
                                                     </constraints>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TV" translatesAutoresizingMaskIntoConstraints="NO" id="DgS-bP-NLc">
-                                                    <rect key="frame" x="13" y="62" width="16" height="16"/>
+                                                    <rect key="frame" x="13" y="62" width="98.000000000000028" height="98.000000000000028"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upi-EN-yXl">
-                                                    <rect key="frame" x="6" y="86" width="30" height="19"/>
+                                                    <rect key="frame" x="46" y="168" width="32.5" height="19"/>
                                                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
                                                     <color key="textColor" red="0.33725490196078434" green="0.50196078431372548" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbF-zK-02g">
-                                                    <rect key="frame" x="1.5" y="109" width="39.5" height="14"/>
+                                                    <rect key="frame" x="43.5" y="191" width="37.5" height="14"/>
                                                     <fontDescription key="fontDescription" name="Lato-MediumItalic" family="Lato" pointSize="12"/>
                                                     <color key="textColor" red="0.33725490196078434" green="0.50196078431372548" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -149,7 +149,7 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P69-TJ-G01">
-                                <rect key="frame" x="137.5" y="49" width="139" height="24"/>
+                                <rect key="frame" x="137.5" y="54" width="139" height="24"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -171,7 +171,7 @@
                         <constraints>
                             <constraint firstItem="HLU-sN-vUR" firstAttribute="trailing" secondItem="uHB-JH-3eH" secondAttribute="trailing" id="5I2-QT-EXj"/>
                             <constraint firstItem="HLU-sN-vUR" firstAttribute="leading" secondItem="uHB-JH-3eH" secondAttribute="leading" id="ArX-fe-Ofv"/>
-                            <constraint firstItem="P69-TJ-G01" firstAttribute="top" secondItem="uHB-JH-3eH" secondAttribute="top" constant="5" id="Bpy-SH-7Tl"/>
+                            <constraint firstItem="P69-TJ-G01" firstAttribute="top" secondItem="uHB-JH-3eH" secondAttribute="top" constant="10" id="Bpy-SH-7Tl"/>
                             <constraint firstAttribute="bottom" secondItem="HLU-sN-vUR" secondAttribute="bottom" id="KMj-z1-vTf"/>
                             <constraint firstItem="HLU-sN-vUR" firstAttribute="top" secondItem="q53-oe-0xZ" secondAttribute="top" id="QxM-fk-YbK"/>
                             <constraint firstAttribute="bottom" secondItem="KRs-UA-H7i" secondAttribute="bottom" id="Sbz-0y-A22"/>

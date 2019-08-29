@@ -10,15 +10,15 @@ import Foundation
 import UIKit
 
 enum Category: String {
-    case movies = "movies"
-    case sports = "sports"
-    case friends = "friends"
-    case tvShows = "tvshows"
-    case hobbies = "hobbies"
-    case books = "books"
-    case music = "music"
-    case foods = "foods"
-    case places = "places"
+    case movies = "MOVIES"
+    case sports = "SPORTS"
+    case friends = "FRIENDS"
+    case tvShows = "TV SHOWS"
+    case hobbies = "HOBBIES"
+    case books = "BOOKS"
+    case music = "MUSIC"
+    case foods = "FOODS"
+    case places = "PLACES"
 }
 
 struct TopNineItem {
