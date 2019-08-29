@@ -10,7 +10,8 @@ import UIKit
 
 class TopNineDetailViewController: UIViewController {
     
-    @IBOutlet weak var pageNameLabel: UILabel!
+    
+    @IBOutlet weak var categoryNameLabel: UILabel!
     @IBOutlet weak var topNineCollectionView: UICollectionView!
     @IBOutlet weak var connectCollectionView: UICollectionView!
     
@@ -27,13 +28,15 @@ class TopNineDetailViewController: UIViewController {
         super.viewDidLoad()
         self.view.addSubview(topNineCollectionView)
         self.view.addSubview(connectCollectionView)
+        categoryNameLabel.text = itemName
+    
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let name = itemName {
-            pageNameLabel.text = name
+            categoryNameLabel.text = name
         }
     }
 

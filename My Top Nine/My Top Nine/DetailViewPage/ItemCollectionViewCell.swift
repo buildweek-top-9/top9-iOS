@@ -12,5 +12,10 @@ class ItemCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var topNineItemImageView: UIImageView!
     
+    @IBOutlet weak var itemNameLabel: UILabel!
+    @IBOutlet weak var itemSubtitleLabel: UILabel!
+    @IBOutlet weak var itemRankLabel: UILabel!
+    
+    
     
 }
