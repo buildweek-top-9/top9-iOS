@@ -63,13 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		92E9DA002314C2FC009DAFD0 /* EditDetailsPage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EditDetailsPage;
-			sourceTree = "<group>";
-		};
 		92E9DA0123176189009DAFD0 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,17 +94,9 @@
 			path = DetailViewPage;
 			sourceTree = "<group>";
 		};
-		92EDF6FC2311C99E007D0BA5 /* In-App Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "In-App Models";
-			sourceTree = "<group>";
-		};
 		A45FEE88230E27C2009E103D = {
 			isa = PBXGroup;
 			children = (
-				92E9DA08231774E0009DAFD0 /* EditTopNineItem.storyboard */,
 				A45FEE93230E27C2009E103D /* My Top Nine */,
 				A45FEE92230E27C2009E103D /* Products */,
 			);
@@ -128,11 +113,10 @@
 		A45FEE93230E27C2009E103D /* My Top Nine */ = {
 			isa = PBXGroup;
 			children = (
-				92E9DA0123176189009DAFD0 /* Fonts */,
-				92F4FE3B230F9CD2006017A4 /* TopNineItem.swift */,
+				92E9DA08231774E0009DAFD0 /* EditTopNineItem.storyboard */,
 				92F4FE3D230F9DDD006017A4 /* TopNineCategory.swift */,
-				92EDF6FC2311C99E007D0BA5 /* In-App Models */,
-				92E9DA002314C2FC009DAFD0 /* EditDetailsPage */,
+				92F4FE3B230F9CD2006017A4 /* TopNineItem.swift */,
+				92E9DA0123176189009DAFD0 /* Fonts */,
 				92EDF6F92311C88B007D0BA5 /* DetailViewPage */,
 				92EDF6F82311C873007D0BA5 /* HomePage */,
 				A45FEE94230E27C2009E103D /* AppDelegate.swift */,
