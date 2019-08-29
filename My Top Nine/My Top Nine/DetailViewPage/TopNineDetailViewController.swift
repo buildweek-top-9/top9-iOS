@@ -71,7 +71,7 @@ extension TopNineDetailViewController: UICollectionViewDelegate, UICollectionVie
             
             let item = items[indexPath.item]
             
-            cellA.topNineItemImageView.image = UIImage(named: "\(item)")
+            cellA.topNineItemImageView.image = UIImage(named: "detailCellBg")
             
             return cellA
         } else {

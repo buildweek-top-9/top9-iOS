@@ -41,29 +41,53 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.98039215686274506" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YbY-z7-KY6">
-                                    <size key="itemSize" width="133" height="186"/>
+                                    <size key="itemSize" width="134" height="186"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="topNineItemCell" id="KRf-OC-9NX" customClass="ItemCollectionViewCell" customModule="My_Top_Nine" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="133" height="186"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="186"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="133" height="186"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="134" height="186"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M6n-Du-YwU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="133" height="186"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailCellBg" translatesAutoresizingMaskIntoConstraints="NO" id="M6n-Du-YwU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="134" height="186"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="134" id="405-al-ADM"/>
+                                                        <constraint firstAttribute="width" secondItem="M6n-Du-YwU" secondAttribute="height" multiplier="67:93" id="CRv-7S-i7b"/>
+                                                    </constraints>
                                                 </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Sho" translatesAutoresizingMaskIntoConstraints="NO" id="DgS-bP-NLc">
+                                                    <rect key="frame" x="12" y="18" width="98" height="98"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upi-EN-yXl">
+                                                    <rect key="frame" x="45" y="121" width="32" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="subtitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbF-zK-02g">
+                                                    <rect key="frame" x="33" y="139" width="57" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="M6n-Du-YwU" secondAttribute="bottom" id="AWP-bd-lM3"/>
-                                            <constraint firstItem="M6n-Du-YwU" firstAttribute="leading" secondItem="KRf-OC-9NX" secondAttribute="leading" id="LmU-Km-buY"/>
-                                            <constraint firstAttribute="trailing" secondItem="M6n-Du-YwU" secondAttribute="trailing" id="Vue-1U-FH2"/>
-                                            <constraint firstItem="M6n-Du-YwU" firstAttribute="top" secondItem="KRf-OC-9NX" secondAttribute="top" id="x36-H7-65b"/>
+                                            <constraint firstAttribute="bottom" secondItem="M6n-Du-YwU" secondAttribute="bottom" id="A5T-lf-nOL"/>
+                                            <constraint firstItem="Upi-EN-yXl" firstAttribute="top" secondItem="DgS-bP-NLc" secondAttribute="bottom" constant="12" id="chq-jJ-aR3"/>
+                                            <constraint firstItem="DgS-bP-NLc" firstAttribute="top" secondItem="KRf-OC-9NX" secondAttribute="topMargin" constant="10" id="fcH-bg-pws"/>
+                                            <constraint firstItem="Upi-EN-yXl" firstAttribute="centerX" secondItem="DgS-bP-NLc" secondAttribute="centerX" id="lJn-s4-su4"/>
+                                            <constraint firstItem="DbF-zK-02g" firstAttribute="centerX" secondItem="Upi-EN-yXl" secondAttribute="centerX" id="ubP-cs-T1c"/>
+                                            <constraint firstItem="DbF-zK-02g" firstAttribute="top" secondItem="Upi-EN-yXl" secondAttribute="bottom" constant="5" id="uce-43-zLw"/>
+                                            <constraint firstItem="M6n-Du-YwU" firstAttribute="centerX" secondItem="KRf-OC-9NX" secondAttribute="centerX" id="vcD-k0-HfJ"/>
+                                            <constraint firstItem="M6n-Du-YwU" firstAttribute="top" secondItem="KRf-OC-9NX" secondAttribute="top" id="xBu-Nv-P5L"/>
+                                            <constraint firstItem="DgS-bP-NLc" firstAttribute="leading" secondItem="KRf-OC-9NX" secondAttribute="leadingMargin" constant="5" id="y0f-xk-JUz"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="topNineItemImageView" destination="M6n-Du-YwU" id="f8c-vs-NcY"/>
@@ -140,7 +164,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Sho" width="98" height="98"/>
         <image name="backbtn" width="12" height="18"/>
+        <image name="detailCellBg" width="164" height="216"/>
         <image name="detailbg" width="414" height="896"/>
         <image name="discoverMore" width="370" height="130"/>
     </resources>
