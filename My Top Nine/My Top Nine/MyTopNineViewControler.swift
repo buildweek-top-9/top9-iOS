@@ -21,7 +21,7 @@ class MyTopNineViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
-        hud.textLabel.text = "Loading Activities..."
+        hud.textLabel.text = "Loading Top Nine..."
         hud.show(in: view, animated: true)
         addCategoryToArray()
     }
