@@ -15,6 +15,8 @@
 		5765CD8F231890CD0038A34F /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5765CD8E231890CD0038A34F /* SplashScreenViewController.swift */; };
 		5765CD91231891FA0038A34F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5765CD90231891FA0038A34F /* Service.swift */; };
 		5765CD94231893220038A34F /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5765CD93231893220038A34F /* Welcome.storyboard */; };
+		5765CD962318ADC50038A34F /* MyTopNineViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5765CD952318ADC50038A34F /* MyTopNineViewControler.swift */; };
+		5765CD982318B7390038A34F /* MyTopNineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5765CD972318B7390038A34F /* MyTopNineCollectionViewCell.swift */; };
 		92E9DA05231761E0009DAFD0 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92E9DA02231761E0009DAFD0 /* Lato-MediumItalic.ttf */; };
 		92E9DA06231761E0009DAFD0 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92E9DA03231761E0009DAFD0 /* Lato-Bold.ttf */; };
 		92E9DA07231761E0009DAFD0 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92E9DA04231761E0009DAFD0 /* Lato-Semibold.ttf */; };
@@ -43,6 +45,8 @@
 		5765CD8E231890CD0038A34F /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		5765CD90231891FA0038A34F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		5765CD93231893220038A34F /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		5765CD952318ADC50038A34F /* MyTopNineViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTopNineViewControler.swift; sourceTree = "<group>"; };
+		5765CD972318B7390038A34F /* MyTopNineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTopNineCollectionViewCell.swift; sourceTree = "<group>"; };
 		92E9DA02231761E0009DAFD0 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
 		92E9DA03231761E0009DAFD0 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		92E9DA04231761E0009DAFD0 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				5765CD8C231890BF0038A34F /* WelcomeViewController.swift */,
 				5765CD8E231890CD0038A34F /* SplashScreenViewController.swift */,
 				5765CD90231891FA0038A34F /* Service.swift */,
+				5765CD952318ADC50038A34F /* MyTopNineViewControler.swift */,
+				5765CD972318B7390038A34F /* MyTopNineCollectionViewCell.swift */,
 			);
 			path = "My Top Nine";
 			sourceTree = "<group>";
@@ -314,7 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5765CD89231890A50038A34F /* LoginViewController.swift in Sources */,
+				5765CD962318ADC50038A34F /* MyTopNineViewControler.swift in Sources */,
 				5765CD91231891FA0038A34F /* Service.swift in Sources */,
+				5765CD982318B7390038A34F /* MyTopNineCollectionViewCell.swift in Sources */,
 				92EDF6FE2311D242007D0BA5 /* FriendCollectionViewCell.swift in Sources */,
 				5765CD8F231890CD0038A34F /* SplashScreenViewController.swift in Sources */,
 				5765CD8D231890BF0038A34F /* WelcomeViewController.swift in Sources */,

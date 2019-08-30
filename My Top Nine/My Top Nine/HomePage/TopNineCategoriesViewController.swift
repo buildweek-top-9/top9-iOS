@@ -9,8 +9,9 @@
 import UIKit
 
 class TopNineCategoriesViewController: UIViewController {
-
-    var categories: [Category] = [.friends, .movies, .music, .sports, .tvShows, .foods, .places]
+    
+    
+    var categories: [Category] = [.tvShows, .foods, .friends, .places, .sports, .movies, .music]
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -40,6 +41,7 @@ class TopNineCategoriesViewController: UIViewController {
             if let indexPath = collectionView.indexPathsForSelectedItems?.first {
                 let item = categories[indexPath.item]
                 let name = item.rawValue
+                topNineDetailVC.item = item
                 topNineDetailVC.categoryName = name
             }
         }
