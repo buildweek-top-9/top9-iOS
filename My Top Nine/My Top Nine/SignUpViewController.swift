@@ -118,6 +118,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     
     override func viewDidLoad() {
+        navigationController?.navigationBar.isHidden = false
         signUpAccept.layer.masksToBounds = true
         signUpAccept.layer.cornerRadius = 5
         self.hideKeyboardWhenTappedAround()

@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        navigationController?.navigationBar.isHidden = false
         loginButton.layer.masksToBounds = true
         loginButton.layer.cornerRadius = 5
         self.hideKeyboardWhenTappedAround()

@@ -18,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVg-HL-HXG">
-                                <rect key="frame" x="187.5" y="437.5" width="39" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To My Top 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fQ-Mc-Lhd">
+                                <rect key="frame" x="57" y="435" width="301" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.36470588235294116" green="0.49411493540000001" blue="0.89808040860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="UVg-HL-HXG" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Xxv-s1-krN"/>
-                            <constraint firstItem="UVg-HL-HXG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ekX-P0-vbq"/>
+                            <constraint firstItem="0fQ-Mc-Lhd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bBP-qV-Hk4"/>
+                            <constraint firstItem="0fQ-Mc-Lhd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qjM-2J-dmQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
