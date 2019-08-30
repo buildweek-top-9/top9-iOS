@@ -116,11 +116,11 @@
             </objects>
             <point key="canvasLocation" x="-1309" y="742"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="PxV-OS-aa7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qBj-Te-ajA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="m3k-tD-nR2"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="m3k-tD-nR2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VIR-Gd-vUo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -141,6 +141,7 @@
                 <tabBarController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="iud-86-nur" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KUV-Ng-7KZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -220,11 +221,11 @@
             </objects>
             <point key="canvasLocation" x="1551" y="964"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="rv2-FE-rxZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rk1-hq-jOd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="och-Hd-Swe"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="och-Hd-Swe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M4v-1E-yUl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
